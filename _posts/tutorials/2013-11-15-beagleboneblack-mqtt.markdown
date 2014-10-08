@@ -24,7 +24,7 @@ Prerequisite
 Setup Hardware
 --------------
 
-__Step 1.__ Plug the BeagleBone Black to USB.
+__Step 1.__ Plug the BeagleBone Black to USB and install USB drivers by reading this [getting started](http://beagleboard.org/getting-started).
 
 __Step 2.__ Set up Internet on your device with an ethernet cable.
 
@@ -47,7 +47,7 @@ Open a browser to this url: [http://192.168.7.2/Support/BoneScript/getPlatform/]
 Register your system
 --------------------
 
-The registrtration procedure is decribed in the [MQTT Tutorial](/tutorials/2013/11/12/mqtt-protocol/), follow theses steps and use previously noted _serial-number_ and _name_ of the BeagleBone to create a system for your device.
+The registration procedure is decribed in the [MQTT Tutorial](/tutorials/2013/11/12/mqtt-protocol/), follow theses steps and use previously noted _serial-number_ and _name_ of the BeagleBone to create a system for your device.
 
 Send and Receive data
 ---------------------
@@ -56,13 +56,13 @@ Open the created file to start coding an example using the following snippets.
 
 ### Intialize the MQTT channel:
 
-At first, we need to create a MQTT client instance with the right congfiguration.
+At first, we need to create a MQTT client instance with the right configuration.
 
 ~~~ js
 var mqtt = require('mqtt');
 
 var port = 1883;
-var server = "tcp://na.airvantage.net";
+var server = "na.airvantage.net";
 
 var serialnumber = "3713BBBK7777"; //serialnumber
 var password = "1234";
